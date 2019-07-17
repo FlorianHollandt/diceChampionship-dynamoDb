@@ -2,12 +2,12 @@
 
 <img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_title.png">
 
-The Dice Championship project is about exploring how a simple voice app - Dice Championship - can be implemented and extended using different frameworks, platforms and services. It was initiated (and <a href="https://www.amazon.com/dp/B07V41F2LK">published to the Alexa Skill store</a>) by me (Florian Hollandt), but econtributions of ideas, implementations and improvements are welcome. :)
+The Dice Championship project is about exploring how a simple voice app - Dice Championship - can be implemented and extended using different frameworks, platforms and services. It was initiated (and <a href="https://www.amazon.com/dp/B07V41F2LK">published to the Alexa Skill store</a>) by me (<a href="https://twitter.com/FlorianHollandt">Florian Hollandt</a>), but contributions of ideas, implementations and improvements are very welcome. :)
 
 ## What does the voice app do?
 
 It lets you throw 10 six-dided dice per turn, adds up the dice faces to your score, submits your highest score to a leaderboard, informs you about your current rank, and prompts you to play again. Here's a typical dialog sample, along with the control flow that creates it: <br/>
-<img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_controlFlow.png" width="70%">
+<img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_controlFlow.png" width="90%">
 
 The reason for choosing this very simple voice game is obviously not its superior engagement: It's simple enough to cover its handler functions in a single file, and the leaderboard and 'game loop' make it complex enough to be interesting.
 
@@ -233,7 +233,7 @@ Even though DynamoDB is the default database choice for voice apps, we need to s
    - Write the name of the ASK CLI profile you plan to use into your local `.env` file as e.g. `ASK_PROFILE='default'`.
    - Now execute `jovo build -p alexaSkill --stage local --deploy` from your command line. This builds the Skill manifest (`platforms/alexaSkill/skill.json`) and language model (`platforms/alexaSkill/models/en-US.json`) from the information in the project configuration file (`project.js`) and the Jovo language model (`models/en-US.json`), and uses them to set up a new Skill 'Dice Tournament' in your Alexa developer console.<br/>
     The result should look like this:<br/>
-    <img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_buildLocal.png" width="50%">
+    <img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_buildLocal.png" width="65%">
     - Now copy the Skill ID from the console output and paste it as the value of the `SKILL_ID_STAGING` variable in your `.env` file.
     - Execute `jovo run --watch` from your command line to **activate your local endpoint**
 
@@ -277,13 +277,13 @@ The remaining steps are optional, but recommended. Before we proceed to uploadin
                 Local endpoint for rapid development + debugging
             </td>
             <td>
-                `${JOVO_WEBHOOK_URL}`
+                <code>${JOVO_WEBHOOK_URL}</code>
             </td>
             <td>
-                `DYNAMODB_TABLE_NAME`
+                <code>DYNAMODB_TABLE_NAME</code>
             </td>
             <td>
-                `SKILL_ID_STAGING`
+                <code>SKILL_ID_STAGING</code>
             </td>
             <td>
                 dice tournament
@@ -300,13 +300,13 @@ The remaining steps are optional, but recommended. Before we proceed to uploadin
                 Lambda endpoint for testing on a production-like environment
             </td>
             <td>
-                `LAMBDA_ARN_STAGING`
+                <code>LAMBDA_ARN_STAGING</code>
             </td>
             <td>
-                `DYNAMODB_TABLE_NAME`
+                <code>DYNAMODB_TABLE_NAME</code>
             </td>
             <td>
-                `SKILL_ID_STAGING`
+                <code>SKILL_ID_STAGING</code>
             </td>
             <td>
                 dice tournament
@@ -323,13 +323,13 @@ The remaining steps are optional, but recommended. Before we proceed to uploadin
                 Lambda endpoint for fulfillment of the live Skill
             </td>
             <td>
-                `LAMBDA_ARN_LIVE`
+                <code>LAMBDA_ARN_LIVE</code>
             </td>
             <td>
-                `DYNAMODB_TABLE_NAME`*
+                <code>DYNAMODB_TABLE_NAME</code>*
             </td>
             <td>
-                `SKILL_ID_LIVE`
+                <code>SKILL_ID_LIVE</code>
             </td>
             <td>
                 dice championship
@@ -345,7 +345,7 @@ The remaining steps are optional, but recommended. Before we proceed to uploadin
    - To be able to upload your code to Lambda with the Jovo CLI, make sure your AWS CLI profile is linked to your ASK CLI profile, and has Lambda upload privileges
    - Now all you need to do it execute `jovo build -p alexaSkill --stage staging --deploy`
    - The result should look like this: <br/>
-    <img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_buildStaging.png" width="70%">
+    <img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/diceChampionship_buildStaging.png" width="90%"><br/>
    - Again, you can now test your Skill in the Alexa developer console just like after step 5, in the same Skill
 8. **Preparing and deploying the live stage**
    - I'll cover this part more briefly than the ones before, because it's more about deployment than about getting this Skill to work
