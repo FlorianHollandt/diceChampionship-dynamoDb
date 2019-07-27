@@ -354,6 +354,14 @@ The remaining steps are optional, but recommended. Before we proceed to uploadin
    - To set up the **new Skill** (using the new Lambda endoint, the invocation name 'dice championship', and an expanded version of the manifest including a different Skill icon), execute `jovo build -p alexaSkill --stage live --deploy`. 
    - After the first deployment, copy the new Skill's ID and paste it as the value of `SKILL_ID_LIVE` in your `.env` file
 
+# Investigating your leaderboard
+
+Before checking your leaderboard, it makes sense to play some sessions so it's already populated. What's the highest score **you** can roll? :slot_machine:
+
+You can view the content of your leaderboard directly by going into the <a href="https://eu-west-1.console.aws.amazon.com/dynamodb/home?#tables:">overview of DynamoDB tables</a> in your selected region, clicking on your table's name and then selecting the tab 'items':<br/>
+<img src="https://dicechampionship.s3-eu-west-1.amazonaws.com/screenshots/investigate_dynamoDb.png" width="60%">
+
+
 # Wrapping it up
 I hope you find both this entire project and the individual variants interesting and valuable. Again, if you like this project and want to see it implementing your favorite platform, service or feature, please get in touch or start implementing right away.
 
