@@ -48,9 +48,6 @@ module.exports = {
 		 skillId: process.env.SKILL_ID_STAGING,
 		 askProfile: process.env.ASK_PROFILE
 	},
-	googleAction: {
-		nlu:  'dialogflow',
-	},
 	defaultStage: 'local',
 	stages: {
 		local: {
