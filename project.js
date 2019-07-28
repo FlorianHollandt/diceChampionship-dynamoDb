@@ -12,41 +12,41 @@ module.exports = {
 		manifest: {
 			privacyAndCompliance: {
 				locales: {
-				  'en-US': {
-					privacyPolicyUrl: "",
-					termsOfUseUrl: ""
-				  }
+					'en-US': {
+						privacyPolicyUrl: "",
+						termsOfUseUrl: ""
+					}
 				},
 				allowsPurchases: false,
 				usesPersonalInfo: false,
 				isChildDirected: false,
 				isExportCompliant: true,
 				containsAds: false
-			  },
+			},
 			publishingInformation: {
-			   locales: {
-				  'en-US': {
-					name: 'Dice Tournament',
-					summary: "👉 Can throw the dice better than everyone else? 🎲 Find you just how lucky you are! 🍀",
-					description: "Staging Skill for Dice Championship",
-					examplePhrases: [
-						"Alexa open Dice Tournament"
-					],
-					smallIconUri: "https://exampleresources.s3-eu-west-1.amazonaws.com/skillIcon_diceChampionship_stage_small.png",
-					largeIconUri: "https://exampleresources.s3-eu-west-1.amazonaws.com/skillIcon_diceChampionship_stage_large.png",
-					keywords: [
-						"test"
-					],
-				  },
+				locales: {
+					'en-US': {
+						name: 'Dice Tournament',
+						summary: "👉 Can throw the dice better than everyone else? 🎲 Find you just how lucky you are! 🍀",
+						description: "Staging Skill for Dice Championship",
+						examplePhrases: [
+							"Alexa open Dice Tournament"
+						],
+						smallIconUri: "https://exampleresources.s3-eu-west-1.amazonaws.com/skillIcon_diceChampionship_stage_small.png",
+						largeIconUri: "https://exampleresources.s3-eu-west-1.amazonaws.com/skillIcon_diceChampionship_stage_large.png",
+						keywords: [
+							"test"
+						],
+					},
 				},
 				isAvailableWorldwide: true,
 				testingInstructions: "Sample testing instructions",
 				category: "GAMES",
 				distributionCountries: []
 			},
-		 },
-		 skillId: process.env.SKILL_ID_STAGING,
-		 askProfile: process.env.ASK_PROFILE
+		},
+		skillId: process.env.SKILL_ID_STAGING,
+		askProfile: process.env.ASK_PROFILE
 	},
 	defaultStage: 'local',
 	stages: {
