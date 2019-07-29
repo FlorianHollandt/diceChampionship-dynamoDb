@@ -75,7 +75,7 @@ Here's a preliminary list:
             —
         </td>
         <td>
-            :construction: Under construction
+            :white_check_mark: Up to date
         </td>
     </tr>
     <tr>
@@ -95,7 +95,7 @@ Here's a preliminary list:
             —
         </td>
         <td>
-            :alembic: Public beta
+            :white_check_mark: Complete
         </td>
     </tr>
     <tr>
