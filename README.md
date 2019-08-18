@@ -60,7 +60,7 @@ Here's a preliminary list:
     </tr>
     <tr>
         <td>
-            Live Alexa Skill version
+            <a href="https://github.com/FlorianHollandt/diceChampionship-live">Live Alexa Skill version</a>
         </td>
         <td>
             Jovo
@@ -80,7 +80,7 @@ Here's a preliminary list:
     </tr>
     <tr>
         <td>
-            GameOn version
+            <a href="https://github.com/FlorianHollandt/diceChampionship-gameon">GameOn version</a>
         </td>
         <td>
             Jovo
@@ -100,7 +100,7 @@ Here's a preliminary list:
     </tr>
     <tr>
         <td>
-            AWS Aurora version
+            <a href="https://github.com/FlorianHollandt/diceChampionship-aurora">AWS Aurora version</a>
         </td>
         <td>
             Jovo
@@ -115,7 +115,7 @@ Here's a preliminary list:
             —
         </td>
         <td>
-            :construction: Under construction
+            :white_check_mark: Complete
         </td>
     </tr>
     <tr>
@@ -140,7 +140,7 @@ Here's a preliminary list:
     </tr>
     <tr>
         <td>
-            Google Spreadsheet version
+            <a href="https://github.com/FlorianHollandt/diceChampionship-spreadsheet">Google Spreadsheet version</a>
         </td>
         <td>
             Jovo
@@ -155,12 +155,32 @@ Here's a preliminary list:
             —
         </td>
         <td>
-            :construction: Under construction
+            :white_check_mark: Complete
         </td>
     </tr>
     <tr>
         <td>
             ASK-SDK v2 version
+        </td>
+        <td>
+            ASK-SDK v2
+        </td>
+        <td>
+            Simplified
+        </td>
+        <td>
+            DynamoDB
+        </td>
+        <td>
+            —
+        </td>
+        <td>
+            :pencil2: Planned
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Skill Flow Builder version
         </td>
         <td>
             ASK-SDK v2
